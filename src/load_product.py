@@ -69,7 +69,7 @@ def load_product():
                     AND t.effective_to_date = d.effective_to_date
                     AND COALESCE(t.product_name, '') = COALESCE(d.product_name, '')
                 )
-                LIMIT 2        
+                      
             """)
             print(f"Добавлено {cur.rowcount} новых уникальных записей")
         else:

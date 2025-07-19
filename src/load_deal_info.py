@@ -80,7 +80,7 @@ def load_deal_info():
                     AND COALESCE(t.deal_name, '') = COALESCE(d.deal_name, '')
                     AND COALESCE(t.deal_sum, 0) = COALESCE(d.deal_sum, 0)
                 )
-                LIMIT 2        
+                    
             """)
             print(f"Добавлено {cur.rowcount} новых уникальных записей")
         else:
